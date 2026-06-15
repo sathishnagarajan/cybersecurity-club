@@ -30,7 +30,7 @@ export default function AboutPage() {
           <blockquote className="vision-quote">
             To give the Netherlands&apos; security, cloud and infrastructure
             engineers a place to share how real systems are actually built and
-            secured — and to connect around substance. Knowledge shared,
+            secured — and to connect over the work. Knowledge shared,
             people connected, craft advanced.
           </blockquote>
         </div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
             <article className="value-card">
               <span className="value-num">06</span>
               <h3>Meaningful networking</h3>
-              <p>Peers worth knowing, met around substance.</p>
+              <p>Peers worth knowing, met over the work.</p>
             </article>
           </div>
         </div>

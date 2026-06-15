@@ -54,7 +54,7 @@ export default function Home() {
               </p>
             </article>
             <article className="help-card">
-              <h3>Connect around substance</h3>
+              <h3>Connect over the work</h3>
               <p>
                 Meet peers worth knowing, met over real engineering.
               </p>
@@ -104,7 +104,7 @@ export default function Home() {
             <article className="value-card">
               <span className="value-num">06</span>
               <h3>Meaningful networking</h3>
-              <p>Peers worth knowing, met around substance.</p>
+              <p>Peers worth knowing, met over the work.</p>
             </article>
           </div>
         </div>
