@@ -10,7 +10,7 @@ export default function Home() {
             <div className="hero-copy">
               <p className="kicker">A practitioner gathering · Netherlands</p>
               <h1 className="hero-title">
-                Production stories, told by who built them.
+                Connect and share with the engineers behind production.
               </h1>
               <p className="hero-subhead">
                 Each meetup, one engineer walks the room through a production
