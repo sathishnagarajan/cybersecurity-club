@@ -132,8 +132,9 @@ textarea:focus-visible, summary:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 72px;
+  min-height: 78px;
   gap: 24px;
+  padding-block: 10px;
 }
 .logo { text-decoration: none; color: var(--navy); display: inline-flex; align-items: center; }
 .logo-wordmark {
@@ -143,7 +144,7 @@ textarea:focus-visible, summary:focus-visible {
   letter-spacing: -0.02em;
 }
 .logo-image {
-  height: clamp(44px, 7vw, 52px);
+  height: clamp(36px, 4.5vw, 44px);
   width: auto;
   max-width: 60vw;
   display: block;
