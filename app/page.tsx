@@ -10,14 +10,13 @@ export default function Home() {
             <div className="hero-copy">
               <p className="kicker">A practitioner gathering · Netherlands</p>
               <h1 className="hero-title">
-                Where security &amp; infrastructure engineers talk about what
-                actually runs in production.
+                Production stories, told by who built them.
               </h1>
               <p className="hero-subhead">
-                CyberSecTalk is an event-driven gathering for security, cloud
-                and infrastructure practitioners in the Netherlands. One real
-                production story per meetup — told by the engineer who built
-                it.
+                Each meetup, one engineer walks the room through a production
+                system they shipped — the choices, the trade-offs, the parts
+                that broke. For security, cloud and infrastructure
+                practitioners in the Netherlands.
               </p>
               <div className="hero-actions">
                 <Link href="/event" className="btn btn-primary">
