@@ -27,12 +27,12 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="hero-art" aria-hidden="true">
+            <div className="hero-art">
               <img
-                src="/images/talkshield.png"
-                alt=""
-                width="440"
-                height="440"
+                src="/images/whatbroke-home.jpeg"
+                alt="Practitioners connecting at a community gathering"
+                width="1536"
+                height="2048"
               />
             </div>
           </div>

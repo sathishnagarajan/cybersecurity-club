@@ -225,8 +225,12 @@ textarea:focus-visible, summary:focus-visible {
 .hero-art img {
   width: 100%;
   max-width: 440px;
+  aspect-ratio: 4 / 5;
   height: auto;
   display: block;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 4px;
 }
 .hero-title {
   font-family: var(--font-serif);
