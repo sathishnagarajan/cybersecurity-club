@@ -82,13 +82,13 @@ export default function AboutPage() {
               <div className="founder-photo">
                 <img
                   src="/images/sathish-nagarajan.jpg"
-                  alt="Sathish Nagarajan — Lead Volunteer &amp; Advisor at WhatBroke"
+                  alt="Sathish Nagarajan — Community Strategist / Advisor at WhatBroke"
                 />
               </div>
               <div className="founder-info">
                 <div className="founder-name">Sathish Nagarajan</div>
                 <div className="founder-role">
-                  Lead Volunteer &amp; Advisor
+                  Community Strategist / Advisor
                 </div>
                 <p className="founder-bio">
                   Founder of Pinrom, a project management tool built for
