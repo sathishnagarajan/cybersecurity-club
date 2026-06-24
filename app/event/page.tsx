@@ -40,8 +40,7 @@ export default function EventPage() {
               <p>
                 Expect a single practitioner walking through the architecture
                 they actually ship, the trade-offs they made, and the things
-                that didn&apos;t go to plan. No vendor pitches, no marketing
-                decks.
+                that didn&apos;t go to plan.
               </p>
               <p>
                 We&apos;re intentionally keeping the first meetup small and

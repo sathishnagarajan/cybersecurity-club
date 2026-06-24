@@ -158,8 +158,7 @@ export default function ContactForm() {
         )}
 
         <p className="form-microcopy">
-          We only use your details to reply. No CV collection, no recruiting —
-          see our{" "}
+          We only use your details to reply. See our{" "}
           <a href="#" aria-label="Code of Conduct (to be added)">
             Code of Conduct
           </a>

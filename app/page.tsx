@@ -17,8 +17,9 @@ export default function Home() {
             lessons that shaped the systems they run today.
           </p>
           <div className="hero-rule">
-            <strong>No vendor pitches. No marketing decks.</strong> Just honest
-            conversations about what actually happens in production.
+            <strong>Honest conversations about production.</strong> The
+            choices, the trade-offs, and the lessons that shape the systems
+            engineering teams actually run.
           </div>
           <div className="hero-actions">
             <Link href="/contact?subject=waitlist" className="btn btn-primary">
