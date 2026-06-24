@@ -57,10 +57,8 @@ export default function AboutPage() {
                 />
               </div>
               <div className="founder-info">
+                <div className="founder-role">Chief Convenor</div>
                 <div className="founder-name">Saritha Jain</div>
-                <div className="founder-role">
-                  Founder &amp; Community Builder
-                </div>
                 <p className="founder-bio">
                   Founder of NicheBytes — a niche technical talent partner
                   specialising in Cloud, DevOps, and Cybersecurity across
@@ -89,10 +87,10 @@ export default function AboutPage() {
                 />
               </div>
               <div className="founder-info">
-                <div className="founder-name">Sathish Nagarajan</div>
                 <div className="founder-role">
                   Community Strategist / Advisor
                 </div>
+                <div className="founder-name">Sathish Nagarajan</div>
                 <p className="founder-bio">
                   Multidisciplinary marketing leader and entrepreneur with
                   20+ years across SaaS, technology, film production, and
