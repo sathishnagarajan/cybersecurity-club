@@ -82,7 +82,7 @@ export default function AboutPage() {
             <div className="founder-card">
               <div className="founder-photo">
                 <img
-                  src="/images/sathish-nagarajan.jpg"
+                  src="/images/sathish-nagarajan.png"
                   alt="Sathish Nagarajan — Community Strategist / Advisor at WhatBroke"
                 />
               </div>

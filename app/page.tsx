@@ -37,28 +37,39 @@ export default function Home() {
       {/* WHY */}
       <section className="section section-white">
         <div className="container">
-          <p className="kicker">Why WhatBroke</p>
-          <h2 className="section-title">
-            The lessons that matter most rarely come from success.
-          </h2>
-          <div className="prose-block">
-            <p>
-              The most valuable engineering lessons rarely come from success
-              stories. They come from outages, security incidents, unexpected
-              failures, difficult trade-offs, and the moments when systems
-              behave in ways nobody anticipated.
-            </p>
-            <p>
-              Yet those stories are often missing from conference talks and
-              technical blogs. WhatBroke exists to create a space where
-              practitioners can openly share what happened, what they learned,
-              and how they would approach the problem differently today.
-            </p>
-            <div className="why-callout">
-              <p>
-                Because every production system has a story. And every engineer
-                has something worth sharing.
-              </p>
+          <div className="why-with-photo">
+            <div>
+              <p className="kicker">Why WhatBroke</p>
+              <h2 className="section-title">
+                The lessons that matter most rarely come from success.
+              </h2>
+              <div className="prose-block">
+                <p>
+                  The most valuable engineering lessons rarely come from
+                  success stories. They come from outages, security incidents,
+                  unexpected failures, difficult trade-offs, and the moments
+                  when systems behave in ways nobody anticipated.
+                </p>
+                <p>
+                  Yet those stories are often missing from conference talks
+                  and technical blogs. WhatBroke exists to create a space
+                  where practitioners can openly share what happened, what
+                  they learned, and how they would approach the problem
+                  differently today.
+                </p>
+                <div className="why-callout">
+                  <p>
+                    Because every production system has a story. And every
+                    engineer has something worth sharing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="why-photo">
+              <img
+                src="/images/whatbroke-home.jpeg"
+                alt="WhatBroke community gathering"
+              />
             </div>
           </div>
         </div>
@@ -100,7 +111,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOUNDING SESSION TEASER (with photo) */}
+      {/* FOUNDING SESSION TEASER */}
       <section className="section section-white">
         <div className="container">
           <p className="kicker">Founding Session</p>
@@ -110,26 +121,18 @@ export default function Home() {
             production — how teams are handling identity, access, and security
             boundaries for autonomous systems that take real actions.
           </p>
-          <div className="teaser-with-photo">
-            <div className="teaser-photo">
-              <img
-                src="/images/whatbroke-home.jpeg"
-                alt="WhatBroke community gathering"
-              />
-            </div>
-            <article className="event-teaser teaser-card">
-              <div>
-                <span className="edition">Event #1</span>
-                <h3>AI Agents in Production: Identity &amp; Security</h3>
-                <div className="event-meta">
-                  <span>Details will be announced soon.</span>
-                </div>
+          <article className="event-teaser">
+            <div>
+              <span className="edition">Event #1</span>
+              <h3>AI Agents in Production: Identity &amp; Security</h3>
+              <div className="event-meta">
+                <span>Details will be announced soon.</span>
               </div>
-              <Link href="/event" className="btn btn-primary">
-                See the event
-              </Link>
-            </article>
-          </div>
+            </div>
+            <Link href="/event" className="btn btn-primary">
+              See the event
+            </Link>
+          </article>
         </div>
       </section>
 
