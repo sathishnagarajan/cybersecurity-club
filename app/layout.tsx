@@ -1,8 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
+import { GoogleTagManager } from "@next/third-parties/google";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
+import ConsentDefault from "@/components/ConsentDefault";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 import "./globals.css";
+
+// Google Tag Manager container. Set NEXT_PUBLIC_GTM_ID in .env.local
+// (e.g. GTM-XXXXXXX) to enable. GTM is skipped entirely if unset.
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
 export const metadata: Metadata = {
   title: {
@@ -26,6 +33,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      {/* Consent Mode v2 defaults must run before GTM loads. */}
+      <ConsentDefault />
+      {gtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
       <body>
         <a className="skip-link" href="#main">
           Skip to content
@@ -33,6 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <SiteHeader />
         {children}
         <SiteFooter />
+        <CookieConsentBanner />
       </body>
     </html>
   );

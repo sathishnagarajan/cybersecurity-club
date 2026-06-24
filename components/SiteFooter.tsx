@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CookiePreferencesLink } from "@/components/CookiePreferencesLink";
 
 export default function SiteFooter() {
   return (
@@ -38,6 +39,7 @@ export default function SiteFooter() {
           <a href="#" aria-label="Privacy Policy (to be added)">
             Privacy Policy
           </a>
+          <CookiePreferencesLink className="footer-link-button" />
           <Link href="/contact">Contact</Link>
         </div>
 
