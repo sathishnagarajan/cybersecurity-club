@@ -17,7 +17,7 @@ export default function EventPage() {
           <h1 className="event-title">Founding Session Coming Soon</h1>
           <p className="hero-subhead">
             We&apos;re currently working with speakers, hosts, and community
-            partners to launch the first CyberSecTalk session.
+            partners to launch the first WhatBroke session.
           </p>
         </div>
       </section>

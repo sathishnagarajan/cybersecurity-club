@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach CyberSecTalk to join the waitlist, speak at a session, host a venue, sponsor, or just say hello.",
+    "Reach WhatBroke to join the waitlist, speak at a session, host a venue, sponsor, or just say hello.",
 };
 
 export default function ContactPage() {
@@ -34,7 +34,7 @@ export default function ContactPage() {
               <div className="contact-photo">
                 <img
                   src="/images/whatbroke-home.jpeg"
-                  alt="CyberSecTalk community gathering"
+                  alt="WhatBroke community gathering"
                 />
               </div>
               <div className="direct-contact">

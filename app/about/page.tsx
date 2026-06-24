@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About CyberSecTalk — a practitioner-led community bringing production stories back to the center of technical communities.",
+    "About WhatBroke — a practitioner-led community bringing production stories back to the center of technical communities.",
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="section section-light">
         <div className="container">
-          <p className="kicker">About CyberSecTalk</p>
+          <p className="kicker">About WhatBroke</p>
           <h1 className="hero-title">
             Production stories back at the center of technical communities.
           </h1>
@@ -26,7 +26,7 @@ export default function AboutPage() {
           <div className="about-layout">
             <div className="about-body">
               <p>
-                CyberSecTalk was created to bring production stories back to
+                WhatBroke was created to bring production stories back to
                 the center of technical communities. Too often, engineering
                 events focus on polished outcomes and ideal architectures.
               </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 <div className="founder-photo">
                   <img
                     src="/images/whatbroke-home.jpeg"
-                    alt="Saritha Jain — Founder of CyberSecTalk"
+                    alt="Saritha Jain — Founder of WhatBroke"
                   />
                 </div>
                 <div className="founder-info">
