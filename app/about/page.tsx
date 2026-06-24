@@ -52,7 +52,7 @@ export default function AboutPage() {
             <div className="founder-card">
               <div className="founder-photo">
                 <img
-                  src="/images/whatbroke-home.jpeg"
+                  src="/images/saritha-jain-profile.png"
                   alt="Saritha Jain — Founder of WhatBroke"
                 />
               </div>
