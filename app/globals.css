@@ -1391,4 +1391,24 @@ section[id] { scroll-margin-top: 80px; }
 @media (max-width: 680px) {
   .involve-grid    { grid-template-columns: 1fr; }
   .contact-banner-title { font-size: 1.85rem; }
+  .founder-photo   { height: 280px; }
+  .founder-info    { padding: 1.25rem 1.25rem 1.5rem; }
+  .hero            { padding-block: 4.5rem 3.5rem; }
+  .event-box-light { padding: 1.75rem; }
+}
+
+/* Very narrow phones: keep hero eyebrow from overflowing.
+   The "Community for Security Practitioners" text plus the two
+   28px rule-lines runs ~316px wide and overflows under 480px. */
+@media (max-width: 480px) {
+  .hero-eyebrow {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  .hero-eyebrow::before,
+  .hero-eyebrow::after { display: none; }
+  .hero-rule        { padding: 1rem 1.15rem; font-size: 0.9rem; }
+  .why-callout      { padding: 1rem 1.15rem; }
+  .why-callout p    { font-size: 0.95rem; }
 }
