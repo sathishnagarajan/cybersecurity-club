@@ -94,9 +94,10 @@ export default function ContactForm() {
             <option value="" disabled>
               Select one
             </option>
-            <option>Speaking at an event</option>
-            <option>Sponsoring</option>
-            <option>Hosting a venue</option>
+            <option>Joining the waitlist</option>
+            <option>Speaking at a session</option>
+            <option>Hosting a session</option>
+            <option>Sponsoring / partnering</option>
             <option>Something else</option>
           </select>
         </div>

@@ -6,17 +6,15 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default:
-      "CyberSecTalk — production security stories, told by the engineers who built them",
-    template: "%s · CyberSecTalk",
+    default: "WhatBroke — Prod Stories from Security Engineers",
+    template: "%s · WhatBroke",
   },
   description:
-    "An event-driven gathering for security, cloud and infrastructure practitioners in the Netherlands. One real production story per meetup — told by the engineer who built it.",
+    "A practitioner-led community where security engineers share real production stories — the incidents, trade-offs, failures, and lessons that shaped the systems they run today.",
   openGraph: {
-    title:
-      "CyberSecTalk — production security stories, told by the engineers who built them",
+    title: "WhatBroke — Prod Stories from Security Engineers",
     description:
-      "An event-driven gathering for security, cloud and infrastructure practitioners in the Netherlands.",
+      "A practitioner-led community where security engineers share real production stories.",
     type: "website",
   },
 };

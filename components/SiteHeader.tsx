@@ -1,33 +1,24 @@
 "use client";
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const NAV = [
-  { href: "/", label: "Home" },
-  { href: "/event", label: "Event" },
-  { href: "/about", label: "About" },
-  { href: "/contact", label: "Contact" },
+  { href: "#about", label: "About" },
+  { href: "#founding", label: "Founding Session" },
+  { href: "#get-involved", label: "Get Involved" },
 ];
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const pathname = usePathname();
 
   return (
     <header className="site-header">
       <div className="container header-inner">
-        {/* Logo lives at /public/logo.svg — replace that file to update artwork. */}
-        <Link href="/" className="logo" aria-label="CyberSecTalk home">
-          <img
-            src="/images/cybersectalklogo.png"
-            alt="CyberSecTalk"
-            className="logo-image"
-            width="90"
-            height="40"
-          />
-        </Link>
+        <a href="#hero" className="logo" aria-label="WhatBroke home">
+          <span className="logo-wordmark">
+            What<span className="logo-accent">Broke</span>
+          </span>
+        </a>
 
         <button
           className="nav-toggle"
@@ -49,25 +40,14 @@ export default function SiteHeader() {
             if ((e.target as HTMLElement).closest("a")) setOpen(false);
           }}
         >
-          {NAV.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname?.startsWith(item.href);
-            return (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={isActive ? "nav-link is-active" : "nav-link"}
-              >
-                {item.label}
-              </Link>
-            );
-          })}
-          {/* Routes to /event for now; replace with the live registration URL when ready. */}
-          <Link href="/event" className="btn btn-primary btn-sm">
-            Register
-          </Link>
+          {NAV.map((item) => (
+            <a key={item.href} href={item.href} className="nav-link">
+              {item.label}
+            </a>
+          ))}
+          <a href="#contact" className="btn btn-primary btn-sm">
+            Join the Waitlist
+          </a>
         </nav>
       </div>
     </header>
