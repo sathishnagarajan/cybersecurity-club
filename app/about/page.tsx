@@ -91,10 +91,11 @@ export default function AboutPage() {
                   Community Strategist / Advisor
                 </div>
                 <p className="founder-bio">
-                  Founder of Pinrom, a project management tool built for
-                  freelancers, solopreneurs, and small teams. Focuses on
-                  building lean, affordable software that helps teams stay
-                  organised without the complexity of enterprise tools.
+                  Multidisciplinary marketing leader and entrepreneur with
+                  20+ years across SaaS, technology, film production, and
+                  creative industries. Combines product strategy, GTM
+                  thinking, and community-building experience. Founder of
+                  Pinrom.
                 </p>
                 <div className="founder-links">
                   <a
