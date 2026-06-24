@@ -1184,6 +1184,33 @@ section[id] { scroll-margin-top: 80px; }
   margin-bottom: 1.5rem;
 }
 
+/* Home page: founding session teaser with photo (2-col) */
+.teaser-with-photo {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+.teaser-photo {
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+}
+.teaser-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  min-height: 240px;
+}
+.teaser-card.event-teaser { margin-top: 0; }
+
+@media (max-width: 920px) {
+  .teaser-with-photo { grid-template-columns: 1fr; }
+  .teaser-photo img  { min-height: 200px; }
+}
+
 /* Event box, light variant (sits on white background) */
 .event-box-light {
   background: linear-gradient(135deg, rgba(194,65,12,0.08) 0%, transparent 60%);

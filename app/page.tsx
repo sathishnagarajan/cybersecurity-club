@@ -7,7 +7,7 @@ export default function Home() {
       <section id="hero" className="section section-dark hero hero-centered">
         <div className="container">
           <p className="hero-eyebrow">Community for Security Practitioners</p>
-          <h1 className="hero-title">CyberSecTalk</h1>
+          <h1 className="hero-title">WhatBroke</h1>
           <div className="hero-subtitle">
             Production Stories from Security Engineers
           </div>
@@ -34,7 +34,7 @@ export default function Home() {
       {/* WHY */}
       <section className="section section-white">
         <div className="container">
-          <p className="kicker">Why CyberSecTalk</p>
+          <p className="kicker">Why WhatBroke</p>
           <h2 className="section-title">
             The lessons that matter most rarely come from success.
           </h2>
@@ -47,7 +47,7 @@ export default function Home() {
             </p>
             <p>
               Yet those stories are often missing from conference talks and
-              technical blogs. CyberSecTalk exists to create a space where
+              technical blogs. WhatBroke exists to create a space where
               practitioners can openly share what happened, what they learned,
               and how they would approach the problem differently today.
             </p>
@@ -97,23 +97,31 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FOUNDING SESSION TEASER */}
+      {/* FOUNDING SESSION TEASER (with photo) */}
       <section className="section section-white">
         <div className="container">
           <p className="kicker">Founding Session</p>
           <h2 className="section-title">Coming up.</h2>
-          <article className="event-teaser">
-            <div>
-              <span className="edition">Event #1</span>
-              <h3>AI Agents in Production: Identity &amp; Security</h3>
-              <div className="event-meta">
-                <span>Details will be announced soon.</span>
-              </div>
+          <div className="teaser-with-photo">
+            <div className="teaser-photo">
+              <img
+                src="/images/whatbroke-home.jpeg"
+                alt="WhatBroke community gathering"
+              />
             </div>
-            <Link href="/event" className="btn btn-primary">
-              See the event
-            </Link>
-          </article>
+            <article className="event-teaser teaser-card">
+              <div>
+                <span className="edition">Event #1</span>
+                <h3>AI Agents in Production: Identity &amp; Security</h3>
+                <div className="event-meta">
+                  <span>Details will be announced soon.</span>
+                </div>
+              </div>
+              <Link href="/event" className="btn btn-primary">
+                See the event
+              </Link>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -140,7 +148,7 @@ export default function Home() {
               <span className="card-label">Host a Session</span>
               <h3>Open Your Doors</h3>
               <p>
-                Interested in hosting an upcoming CyberSecTalk meetup?
+                Interested in hosting an upcoming WhatBroke meetup?
               </p>
               <Link
                 href="/contact"
@@ -183,7 +191,7 @@ export default function Home() {
           <p className="kicker">Supported By</p>
           <h2 className="section-title">Community Partners</h2>
           <p className="section-lead">
-            CyberSecTalk is supported by organizations and community partners
+            WhatBroke is supported by organizations and community partners
             who believe in practitioner-led learning, technical excellence, and
             open knowledge sharing.
           </p>

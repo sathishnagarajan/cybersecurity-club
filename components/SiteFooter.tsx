@@ -5,14 +5,10 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-col footer-brand">
-          <Link href="/" className="logo" aria-label="CyberSecTalk home">
-            <img
-              src="/images/cybersectalk-inverse-logo.png"
-              alt="CyberSecTalk"
-              className="logo-image"
-              width="92"
-              height="40"
-            />
+          <Link href="/" className="logo" aria-label="WhatBroke home">
+            <span className="logo-wordmark">
+              What<span className="logo-accent">Broke</span>
+            </span>
           </Link>
           <p className="footer-tag">
             Production Stories from Security Engineers. Built for practitioners.
@@ -52,9 +48,9 @@ export default function SiteFooter() {
 
       <div className="container footer-bottom">
         <p className="sponsor-line">
-          CyberSecTalk is supported by NicheBytes as title sponsor.
+          WhatBroke is supported by NicheBytes as title sponsor.
         </p>
-        <p>© {new Date().getFullYear()} CyberSecTalk</p>
+        <p>© {new Date().getFullYear()} WhatBroke</p>
       </div>
     </footer>
   );

@@ -18,13 +18,13 @@ export default function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <Link href="/" className="logo" aria-label="CyberSecTalk home">
+        <Link href="/" className="logo" aria-label="WhatBroke home">
           <img
-            src="/images/cybersectalklogo.png"
-            alt="CyberSecTalk"
+            src="/images/whatbroke-logo-header.png"
+            alt="WhatBroke"
             className="logo-image"
-            width="90"
-            height="40"
+            width="150"
+            height="44"
           />
         </Link>
 
