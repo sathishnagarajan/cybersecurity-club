@@ -6,9 +6,13 @@ export default function SiteFooter() {
       <div className="container footer-grid">
         <div className="footer-col footer-brand">
           <Link href="/" className="logo" aria-label="WhatBroke home">
-            <span className="logo-wordmark">
-              What<span className="logo-accent">Broke</span>
-            </span>
+            <img
+              src="/images/whatbroke-logo-inverse-footer.png"
+              alt="WhatBroke"
+              className="logo-image footer-logo-image"
+              width="172"
+              height="40"
+            />
           </Link>
           <p className="footer-tag">
             Production Stories from Security Engineers. Built for practitioners.

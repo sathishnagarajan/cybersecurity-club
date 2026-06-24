@@ -32,8 +32,16 @@ export default function EventPage() {
                 A small, practitioner-focused first meetup.
               </h2>
               <p>
-                The inaugural discussion will explore identity and security
-                challenges surrounding AI agents in production environments.
+                The first session looks at AI agents running in production —
+                how engineering teams are handling identity, access, and
+                security boundaries for autonomous systems that take real
+                actions on real infrastructure.
+              </p>
+              <p>
+                Expect a single practitioner walking through the architecture
+                they actually ship, the trade-offs they made, and the things
+                that didn&apos;t go to plan. No vendor pitches, no marketing
+                decks.
               </p>
               <p>
                 We&apos;re intentionally keeping the first meetup small and
@@ -41,7 +49,7 @@ export default function EventPage() {
                 know as soon as registration opens.
               </p>
               <Link
-                href="/contact"
+                href="/contact?subject=waitlist"
                 className="btn btn-primary founding-cta"
               >
                 Join the Waitlist
@@ -56,7 +64,10 @@ export default function EventPage() {
                 <div className="event-box-meta-light">
                   Details will be announced soon.
                 </div>
-                <Link href="/contact" className="btn btn-primary">
+                <Link
+                  href="/contact?subject=waitlist"
+                  className="btn btn-primary"
+                >
                   Get Notified
                 </Link>
               </div>
@@ -70,7 +81,7 @@ export default function EventPage() {
         <div className="container">
           <h2 className="section-title">Want a heads up when seats open?</h2>
           <div className="hero-actions">
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/contact?subject=waitlist" className="btn btn-primary">
               Join the Waitlist
             </Link>
             <Link href="/contact" className="btn btn-outline-dark">

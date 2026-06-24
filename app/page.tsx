@@ -21,10 +21,13 @@ export default function Home() {
             conversations about what actually happens in production.
           </div>
           <div className="hero-actions">
-            <Link href="/contact" className="btn btn-primary">
+            <Link href="/contact?subject=waitlist" className="btn btn-primary">
               Join the Waitlist
             </Link>
-            <Link href="/contact" className="btn btn-outline-light">
+            <Link
+              href="/contact?subject=speaker"
+              className="btn btn-outline-light"
+            >
               Speak at a Future Session
             </Link>
           </div>
@@ -102,6 +105,11 @@ export default function Home() {
         <div className="container">
           <p className="kicker">Founding Session</p>
           <h2 className="section-title">Coming up.</h2>
+          <p className="section-lead">
+            The first WhatBroke session looks at AI agents running in
+            production — how teams are handling identity, access, and security
+            boundaries for autonomous systems that take real actions.
+          </p>
           <div className="teaser-with-photo">
             <div className="teaser-photo">
               <img
@@ -140,7 +148,10 @@ export default function Home() {
                 Have a production lesson worth sharing? We&apos;d love to hear
                 from you.
               </p>
-              <Link href="/contact" className="btn btn-primary btn-sm card-cta">
+              <Link
+                href="/contact?subject=speaker"
+                className="btn btn-primary btn-sm card-cta"
+              >
                 Become a Speaker
               </Link>
             </article>
@@ -151,7 +162,7 @@ export default function Home() {
                 Interested in hosting an upcoming WhatBroke meetup?
               </p>
               <Link
-                href="/contact"
+                href="/contact?subject=host"
                 className="btn btn-outline-dark btn-sm card-cta"
               >
                 Become a Host
@@ -165,7 +176,7 @@ export default function Home() {
                 partnerships.
               </p>
               <Link
-                href="/contact"
+                href="/contact?subject=sponsor"
                 className="btn btn-outline-dark btn-sm card-cta"
               >
                 Become a Sponsor
@@ -177,7 +188,10 @@ export default function Home() {
               <p>
                 Get notified about future sessions and community updates.
               </p>
-              <Link href="/contact" className="btn btn-primary btn-sm card-cta">
+              <Link
+                href="/contact?subject=waitlist"
+                className="btn btn-primary btn-sm card-cta"
+              >
                 Join the Waitlist
               </Link>
             </article>
@@ -191,8 +205,8 @@ export default function Home() {
           <p className="kicker">Supported By</p>
           <h2 className="section-title">Community Partners</h2>
           <p className="section-lead">
-            WhatBroke is supported by organizations and community partners
-            who believe in practitioner-led learning, technical excellence, and
+            WhatBroke is supported by organizations and community partners who
+            believe in practitioner-led learning, technical excellence, and
             open knowledge sharing.
           </p>
           <div className="sponsors-row">

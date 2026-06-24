@@ -1232,13 +1232,48 @@ section[id] { scroll-margin-top: 80px; }
   margin-bottom: 1.5rem;
 }
 
-/* Get involved 4-col */
+/* Get involved 4-col — give the cards real breathing room */
 .involve-grid {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
 }
+.involve-grid .help-card { padding: 2rem 1.75rem; }
+
+/* About page: full-width prose block */
+.prose-wide {
+  max-width: 760px;
+  margin: 0;
+}
+.prose-wide p { font-size: 1.05rem; line-height: 1.8; }
+
+/* About page: 2-col people grid (Saritha + Sathish) */
+.people-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 820px;
+}
+
+/* Footer logo image needs a slightly different aspect (4.3:1) */
+.footer-logo-image { width: auto; max-height: 40px; }
+
+/* Visual hierarchy: more space between section-title and the
+   content immediately under it across pages. */
+.section-title + p,
+.section-title + .prose-block,
+.section-title + .section-lead,
+.section-title + .help-grid,
+.section-title + .involve-grid,
+.section-title + .teaser-with-photo,
+.section-title + .people-grid,
+.section-title + .hero-actions { margin-top: 1.5rem; }
+
+.kicker + h1,
+.kicker + .section-title,
+.kicker + .hero-title { margin-top: 0.85rem; }
 
 /* Contact section: split banner + body */
 .contact-banner {
