@@ -62,9 +62,10 @@ export default function AboutPage() {
                   Founder &amp; Community Builder
                 </div>
                 <p className="founder-bio">
-                  Technology community builder passionate about connecting
-                  practitioners, creating meaningful technical conversations,
-                  and helping professionals learn from real-world experiences.
+                  Tech community builder and Tech Talent Partner. Focused on
+                  connecting practitioners with opportunities and creating
+                  spaces for meaningful technical conversations across the
+                  engineering ecosystem.
                 </p>
                 <div className="founder-links">
                   <a
