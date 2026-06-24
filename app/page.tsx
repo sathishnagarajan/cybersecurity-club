@@ -18,6 +18,10 @@ export default function Home() {
                 that broke. For security, cloud and infrastructure
                 practitioners in the Netherlands.
               </p>
+              <div className="hero-rule">
+                <strong>One company. One real production system.</strong>{" "}
+                Walked through end-to-end by the engineer who built it.
+              </div>
               <div className="hero-actions">
                 <Link href="/event" className="btn btn-primary">
                   See the event
