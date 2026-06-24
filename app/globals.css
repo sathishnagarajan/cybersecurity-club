@@ -1184,6 +1184,27 @@ section[id] { scroll-margin-top: 80px; }
   margin-bottom: 1.5rem;
 }
 
+/* Event box, light variant (sits on white background) */
+.event-box-light {
+  background: linear-gradient(135deg, rgba(194,65,12,0.08) 0%, transparent 60%);
+  border: 1px solid rgba(194,65,12,0.25);
+  padding: 2.25rem;
+  border-radius: 4px;
+}
+.event-box-title-light {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+.event-box-meta-light {
+  font-size: 0.88rem;
+  color: var(--gray-600);
+  margin-bottom: 1.5rem;
+}
+
 /* Get involved 4-col */
 .involve-grid {
   margin-top: 2.5rem;

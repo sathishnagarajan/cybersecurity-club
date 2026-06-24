@@ -1,24 +1,32 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const NAV = [
-  { href: "#about", label: "About" },
-  { href: "#founding", label: "Founding Session" },
-  { href: "#get-involved", label: "Get Involved" },
+  { href: "/", label: "Home" },
+  { href: "/event", label: "Founding Session" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a href="#hero" className="logo" aria-label="WhatBroke home">
-          <span className="logo-wordmark">
-            What<span className="logo-accent">Broke</span>
-          </span>
-        </a>
+        <Link href="/" className="logo" aria-label="CyberSecTalk home">
+          <img
+            src="/images/cybersectalklogo.png"
+            alt="CyberSecTalk"
+            className="logo-image"
+            width="90"
+            height="40"
+          />
+        </Link>
 
         <button
           className="nav-toggle"
@@ -40,14 +48,24 @@ export default function SiteHeader() {
             if ((e.target as HTMLElement).closest("a")) setOpen(false);
           }}
         >
-          {NAV.map((item) => (
-            <a key={item.href} href={item.href} className="nav-link">
-              {item.label}
-            </a>
-          ))}
-          <a href="#contact" className="btn btn-primary btn-sm">
+          {NAV.map((item) => {
+            const isActive =
+              item.href === "/"
+                ? pathname === "/"
+                : pathname?.startsWith(item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={isActive ? "nav-link is-active" : "nav-link"}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+          <Link href="/contact" className="btn btn-primary btn-sm">
             Join the Waitlist
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

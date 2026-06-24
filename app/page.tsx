@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,8 +7,10 @@ export default function Home() {
       <section id="hero" className="section section-dark hero hero-centered">
         <div className="container">
           <p className="hero-eyebrow">Community for Security Practitioners</p>
-          <h1 className="hero-title">WhatBroke</h1>
-          <div className="hero-subtitle">Prod Stories from Security Engineers</div>
+          <h1 className="hero-title">CyberSecTalk</h1>
+          <div className="hero-subtitle">
+            Production Stories from Security Engineers
+          </div>
           <p className="hero-description">
             A practitioner-led community where security engineers share real
             production stories — the incidents, trade-offs, failures, and
@@ -19,20 +21,20 @@ export default function Home() {
             conversations about what actually happens in production.
           </div>
           <div className="hero-actions">
-            <a href="#contact" className="btn btn-primary">
+            <Link href="/contact" className="btn btn-primary">
               Join the Waitlist
-            </a>
-            <a href="#contact" className="btn btn-outline-light">
+            </Link>
+            <Link href="/contact" className="btn btn-outline-light">
               Speak at a Future Session
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* WHY */}
-      <section id="why" className="section section-white">
+      <section className="section section-white">
         <div className="container">
-          <p className="kicker">Why WhatBroke</p>
+          <p className="kicker">Why CyberSecTalk</p>
           <h2 className="section-title">
             The lessons that matter most rarely come from success.
           </h2>
@@ -45,7 +47,7 @@ export default function Home() {
             </p>
             <p>
               Yet those stories are often missing from conference talks and
-              technical blogs. WhatBroke exists to create a space where
+              technical blogs. CyberSecTalk exists to create a space where
               practitioners can openly share what happened, what they learned,
               and how they would approach the problem differently today.
             </p>
@@ -60,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* HOW */}
-      <section id="how" className="section section-light">
+      <section className="section section-light">
         <div className="container">
           <p className="kicker">How Every Session Works</p>
           <h2 className="section-title">
@@ -95,110 +97,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
-      <section id="about" className="section section-white">
+      {/* FOUNDING SESSION TEASER */}
+      <section className="section section-white">
         <div className="container">
-          <div className="about-layout">
-            <div className="about-body">
-              <p className="kicker">About WhatBroke</p>
-              <h2 className="section-title">
-                Production stories back at the center of technical communities.
-              </h2>
-              <p>
-                WhatBroke was created to bring production stories back to the
-                center of technical communities. Too often, engineering events
-                focus on polished outcomes and ideal architectures.
-              </p>
-              <p>
-                But the most valuable lessons come from the challenges teams
-                encounter along the way — the incidents, trade-offs, security
-                decisions, and unexpected failures that shape real-world
-                systems.
-              </p>
-              <p>
-                <strong>The goal is simple:</strong> create a trusted space
-                where practitioners can learn from each other&apos;s
-                experiences and build stronger systems together.
-              </p>
-            </div>
+          <p className="kicker">Founding Session</p>
+          <h2 className="section-title">Coming up.</h2>
+          <article className="event-teaser">
             <div>
-              <div className="founder-card">
-                <div className="founder-photo">
-                  <img
-                    src="/images/whatbroke-home.jpeg"
-                    alt="Saritha Jain — Founder of WhatBroke"
-                  />
-                </div>
-                <div className="founder-info">
-                  <div className="founder-name">Saritha Jain</div>
-                  <div className="founder-role">
-                    Founder &amp; Community Builder
-                  </div>
-                  <p className="founder-bio">
-                    Technology community builder passionate about connecting
-                    practitioners, creating meaningful technical conversations,
-                    and helping professionals learn from real-world experiences.
-                  </p>
-                  <div className="founder-links">
-                    <a
-                      href="https://www.linkedin.com/in/sarithajain/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      LinkedIn →
-                    </a>
-                  </div>
-                </div>
+              <span className="edition">Event #1</span>
+              <h3>AI Agents in Production: Identity &amp; Security</h3>
+              <div className="event-meta">
+                <span>Details will be announced soon.</span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FOUNDING SESSION */}
-      <section id="founding" className="section section-dark">
-        <div className="container">
-          <div className="founding-inner">
-            <div>
-              <p className="kicker">Founding Session</p>
-              <h2 className="section-title">Founding Session Coming Soon</h2>
-              <p>
-                We&apos;re currently working with speakers, hosts, and community
-                partners to launch the first WhatBroke session.
-              </p>
-              <p>
-                The inaugural discussion will explore identity and security
-                challenges surrounding AI agents in production environments.
-              </p>
-              <p>
-                We&apos;re intentionally keeping the first meetup small and
-                practitioner-focused. Join the waitlist and we&apos;ll let you
-                know as soon as registration opens.
-              </p>
-              <a href="#contact" className="btn btn-primary founding-cta">
-                Join the Waitlist
-              </a>
-            </div>
-            <div>
-              <div className="event-box">
-                <div className="event-badge">Event #1</div>
-                <div className="event-box-title">
-                  AI Agents in Production: Identity &amp; Security
-                </div>
-                <div className="event-box-meta">
-                  Details will be announced soon.
-                </div>
-                <a href="#contact" className="btn btn-primary">
-                  Get Notified
-                </a>
-              </div>
-            </div>
-          </div>
+            <Link href="/event" className="btn btn-primary">
+              See the event
+            </Link>
+          </article>
         </div>
       </section>
 
       {/* GET INVOLVED */}
-      <section id="get-involved" className="section section-white">
+      <section className="section section-light">
         <div className="container">
           <p className="kicker">Get Involved</p>
           <h2 className="section-title">
@@ -212,22 +132,22 @@ export default function Home() {
                 Have a production lesson worth sharing? We&apos;d love to hear
                 from you.
               </p>
-              <a href="#contact" className="btn btn-primary btn-sm card-cta">
+              <Link href="/contact" className="btn btn-primary btn-sm card-cta">
                 Become a Speaker
-              </a>
+              </Link>
             </article>
             <article className="help-card">
               <span className="card-label">Host a Session</span>
               <h3>Open Your Doors</h3>
               <p>
-                Interested in hosting an upcoming WhatBroke meetup?
+                Interested in hosting an upcoming CyberSecTalk meetup?
               </p>
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="btn btn-outline-dark btn-sm card-cta"
               >
                 Become a Host
-              </a>
+              </Link>
             </article>
             <article className="help-card">
               <span className="card-label">Support the Community</span>
@@ -236,12 +156,12 @@ export default function Home() {
                 Help grow practitioner-led learning through sponsorship or
                 partnerships.
               </p>
-              <a
-                href="#contact"
+              <Link
+                href="/contact"
                 className="btn btn-outline-dark btn-sm card-cta"
               >
                 Become a Sponsor
-              </a>
+              </Link>
             </article>
             <article className="help-card">
               <span className="card-label">Stay Connected</span>
@@ -249,66 +169,22 @@ export default function Home() {
               <p>
                 Get notified about future sessions and community updates.
               </p>
-              <a href="#contact" className="btn btn-primary btn-sm card-cta">
+              <Link href="/contact" className="btn btn-primary btn-sm card-cta">
                 Join the Waitlist
-              </a>
+              </Link>
             </article>
           </div>
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section id="contact">
-        <div className="contact-banner">
-          <div className="container">
-            <h2 className="contact-banner-title">
-              Speak. Sponsor. Host.
-              <br />
-              Or just reach us.
-            </h2>
-            <p className="contact-banner-sub">
-              Whether you want to share a production story, support the
-              gathering, or offer a venue — start here.
-            </p>
-          </div>
-        </div>
-        <div className="contact-body">
-          <div className="container">
-            <div className="contact-grid">
-              <ContactForm />
-              <aside className="contact-aside">
-                <div className="contact-photo">
-                  <img
-                    src="/images/whatbroke-home.jpeg"
-                    alt="WhatBroke community gathering"
-                  />
-                </div>
-                <div className="direct-contact">
-                  <div className="direct-contact-label">Direct Contact</div>
-                  <div className="direct-contact-person">
-                    <div className="dc-avatar">SJ</div>
-                    <div>
-                      <div className="dc-name">Saritha Jain</div>
-                      <div className="dc-role">
-                        Founder · NicheBytes
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* SPONSORS */}
-      <section id="sponsors" className="section section-light center-text">
+      <section className="section section-tight section-white center-text">
         <div className="container">
           <p className="kicker">Supported By</p>
           <h2 className="section-title">Community Partners</h2>
           <p className="section-lead">
-            WhatBroke is supported by organizations and community partners who
-            believe in practitioner-led learning, technical excellence, and
+            CyberSecTalk is supported by organizations and community partners
+            who believe in practitioner-led learning, technical excellence, and
             open knowledge sharing.
           </p>
           <div className="sponsors-row">

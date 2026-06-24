@@ -1,24 +1,31 @@
+import Link from "next/link";
+
 export default function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="container footer-grid">
         <div className="footer-col footer-brand">
-          <a href="#hero" className="logo" aria-label="WhatBroke home">
-            <span className="logo-wordmark">
-              What<span className="logo-accent">Broke</span>
-            </span>
-          </a>
+          <Link href="/" className="logo" aria-label="CyberSecTalk home">
+            <img
+              src="/images/cybersectalk-inverse-logo.png"
+              alt="CyberSecTalk"
+              className="logo-image"
+              width="92"
+              height="40"
+            />
+          </Link>
           <p className="footer-tag">
-            Prod Stories from Security Engineers. Built for practitioners.
+            Production Stories from Security Engineers. Built for practitioners.
             Powered by community.
           </p>
         </div>
 
         <div className="footer-col">
           <h4>Navigate</h4>
-          <a href="#about">About</a>
-          <a href="#founding">Founding Session</a>
-          <a href="#get-involved">Get Involved</a>
+          <Link href="/">Home</Link>
+          <Link href="/event">Founding Session</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </div>
 
         <div className="footer-col">
@@ -31,7 +38,7 @@ export default function SiteFooter() {
           <a href="#" aria-label="Privacy Policy (to be added)">
             Privacy Policy
           </a>
-          <a href="#contact">Contact</a>
+          <Link href="/contact">Contact</Link>
         </div>
 
         <div className="footer-col">
@@ -45,9 +52,9 @@ export default function SiteFooter() {
 
       <div className="container footer-bottom">
         <p className="sponsor-line">
-          WhatBroke is supported by NicheBytes as title sponsor.
+          CyberSecTalk is supported by NicheBytes as title sponsor.
         </p>
-        <p>© {new Date().getFullYear()} WhatBroke</p>
+        <p>© {new Date().getFullYear()} CyberSecTalk</p>
       </div>
     </footer>
   );

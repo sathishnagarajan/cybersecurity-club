@@ -6,13 +6,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "WhatBroke — Prod Stories from Security Engineers",
-    template: "%s · WhatBroke",
+    default: "CyberSecTalk — Production Stories from Security Engineers",
+    template: "%s · CyberSecTalk",
   },
   description:
     "A practitioner-led community where security engineers share real production stories — the incidents, trade-offs, failures, and lessons that shaped the systems they run today.",
   openGraph: {
-    title: "WhatBroke — Prod Stories from Security Engineers",
+    title: "CyberSecTalk — Production Stories from Security Engineers",
     description:
       "A practitioner-led community where security engineers share real production stories.",
     type: "website",
