@@ -62,10 +62,12 @@ export default function AboutPage() {
                   Founder &amp; Community Builder
                 </div>
                 <p className="founder-bio">
-                  Tech community builder and Tech Talent Partner. Focused on
-                  connecting practitioners with opportunities and creating
-                  spaces for meaningful technical conversations across the
-                  engineering ecosystem.
+                  Founder of NicheBytes — a niche technical talent partner
+                  specialising in Cloud, DevOps, and Cybersecurity across
+                  European SaaS and scale-ups. 12+ years embedded with
+                  engineering teams at Zoho, Worldline, and PowerToFly,
+                  partnering with managers on hiring and building practitioner
+                  networks across the EU/UK technology ecosystem.
                 </p>
                 <div className="founder-links">
                   <a
