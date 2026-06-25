@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 
 export const metadata: Metadata = {
   title: "Founding Session",
@@ -17,7 +18,7 @@ export default function EventPage() {
           <h1 className="event-title">Founding Session Coming Soon</h1>
           <p className="hero-subhead">
             We&apos;re currently working with speakers, hosts, and community
-            partners to launch the first <span className="brand">WhatBroke</span> session.
+            partners to launch the first <BrandMark /> session.
           </p>
         </div>
       </section>

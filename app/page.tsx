@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
           <div className="why-with-panel">
             <div className="why-text">
               <p className="kicker">
-                Why <span className="brand">WhatBroke</span>
+                Why <BrandMark />
               </p>
               <h2 className="section-title">
                 The lessons that matter most rarely come from success.
@@ -63,7 +64,7 @@ export default function Home() {
                 </p>
                 <p>
                   Yet those stories are often missing from conference talks
-                  and technical blogs. <span className="brand">WhatBroke</span>{" "}
+                  and technical blogs. <BrandMark />{" "}
                   exists to create a space where practitioners can openly
                   share what happened, what they learned, and how they would
                   approach the problem differently today.
@@ -162,7 +163,7 @@ export default function Home() {
           <p className="kicker">Founding Session</p>
           <h2 className="section-title">Coming up.</h2>
           <p className="section-lead">
-            The first <span className="brand">WhatBroke</span> session looks
+            The first <BrandMark /> session looks
             at AI agents running in production — how teams are handling
             identity, access, and security boundaries for autonomous systems
             that take real actions.
@@ -209,7 +210,7 @@ export default function Home() {
               <h3>Open Your Doors</h3>
               <p>
                 Interested in hosting an upcoming{" "}
-                <span className="brand">WhatBroke</span> meetup?
+                <BrandMark /> meetup?
               </p>
               <Link
                 href="/contact?subject=host"
@@ -255,7 +256,7 @@ export default function Home() {
           <p className="kicker">Supported By</p>
           <h2 className="section-title">Community Partners</h2>
           <p className="section-lead">
-            <span className="brand">WhatBroke</span> is supported by
+            <BrandMark /> is supported by
             organizations and community partners who believe in
             practitioner-led learning, technical excellence, and open
             knowledge sharing.

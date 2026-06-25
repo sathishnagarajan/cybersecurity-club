@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BrandMark } from "@/components/BrandMark";
 
 export const metadata: Metadata = {
   title: "About",
@@ -14,7 +15,7 @@ export default function AboutPage() {
       <section className="section section-light">
         <div className="container">
           <p className="kicker">
-            About <span className="brand">WhatBroke</span>
+            About <BrandMark />
           </p>
           <h1 className="hero-title">
             Production stories back at the center of technical communities.
@@ -27,7 +28,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-body prose-wide">
             <p>
-              <span className="brand">WhatBroke</span> was created to bring
+              <BrandMark /> was created to bring
               production stories back to the center of technical communities.
               Too often, engineering events focus on polished outcomes and
               ideal architectures.
