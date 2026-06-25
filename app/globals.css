@@ -1338,12 +1338,23 @@ section[id] { scroll-margin-top: 80px; }
   margin-bottom: 1.5rem;
 }
 
-/* Brand mark — bold orange "WhatBroke" in body prose.
-   Skip in large titles, CTAs, hero h1, footer copyright. */
+/* Brand mark — dual-tone "WhatBroke" matching the logo.
+   "What" = brand navy, "Broke" = brand orange. Applied to body
+   prose only — skip in large titles, CTAs, hero h1, footer
+   copyright. */
 .brand {
-  color: var(--orange);
   font-weight: 700;
+  color: var(--navy);
+  letter-spacing: -0.01em;
 }
+.brand-broke { color: var(--orange); }
+
+/* Dark-context: flip "What" to white so it stays readable. */
+.section-dark .brand,
+.hero .brand,
+.site-footer .brand,
+.contact-banner .brand,
+.why-message .brand { color: var(--white); }
 
 /* Why section: text left, designed navy panel right */
 .why-with-panel {
