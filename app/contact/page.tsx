@@ -25,25 +25,41 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* BODY: form + aside */}
+      {/* BODY: form + "What happens next" panel */}
       <section className="contact-body">
         <div className="container">
           <div className="contact-grid">
             <ContactForm />
-            <aside className="contact-aside">
-              <div className="contact-photo">
-                <img
-                  src="/images/whatbroke-home.jpeg"
-                  alt="WhatBroke community gathering"
-                />
+            <aside className="what-next">
+              <div className="what-next-eyebrow">
+                <span>What happens next</span>
               </div>
-              <div className="direct-contact">
-                <div className="direct-contact-label">Direct Contact</div>
-                <div className="direct-contact-person">
-                  <div className="dc-avatar">SJ</div>
+              <div className="what-next-steps">
+                <div className="what-next-step">
+                  <span className="what-next-num">01</span>
                   <div>
-                    <div className="dc-name">Saritha Jain</div>
-                    <div className="dc-role">Founder · NicheBytes</div>
+                    <p className="what-next-title">You reach out.</p>
+                    <p className="what-next-sub">
+                      That&apos;s all it takes to start.
+                    </p>
+                  </div>
+                </div>
+                <div className="what-next-step">
+                  <span className="what-next-num">02</span>
+                  <div>
+                    <p className="what-next-title">We connect.</p>
+                    <p className="what-next-sub">
+                      A real conversation. No fluff.
+                    </p>
+                  </div>
+                </div>
+                <div className="what-next-step">
+                  <span className="what-next-num is-active">03</span>
+                  <div>
+                    <p className="what-next-title">See you in the room.</p>
+                    <p className="what-next-sub">
+                      Every seat here is intentional.
+                    </p>
                   </div>
                 </div>
               </div>

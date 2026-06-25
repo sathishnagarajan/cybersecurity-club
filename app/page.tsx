@@ -4,43 +4,53 @@ export default function Home() {
   return (
     <main id="main">
       {/* HERO */}
-      <section id="hero" className="section section-dark hero hero-centered">
+      <section className="section section-dark hero">
         <div className="container">
-          <p className="hero-eyebrow">Community for Security Practitioners</p>
-          <h1 className="hero-title">WhatBroke</h1>
-          <div className="hero-subtitle">
-            Production Stories from Security Engineers
-          </div>
-          <p className="hero-description">
-            A practitioner-led community where security engineers share real
-            production stories — the incidents, trade-offs, failures, and
-            lessons that shaped the systems they run today.
-          </p>
-          <div className="hero-rule">
-            <strong>Honest conversations about production.</strong> The
-            choices, the trade-offs, and the lessons that shape the systems
-            engineering teams actually run.
-          </div>
-          <div className="hero-actions">
-            <Link href="/contact?subject=waitlist" className="btn btn-primary">
-              Join the Waitlist
-            </Link>
-            <Link
-              href="/contact?subject=speaker"
-              className="btn btn-outline-light"
-            >
-              Speak at a Future Session
-            </Link>
+          <div className="hero-grid">
+            <div className="hero-copy">
+              <p className="kicker">A practitioner gathering · Netherlands</p>
+              <h1 className="hero-title">
+                Connect and share with the engineers behind production.
+              </h1>
+              <p className="hero-subhead">
+                Each meetup, one engineer walks the room through a production
+                system they shipped — the choices, the trade-offs, the parts
+                that broke. For security, cloud and infrastructure
+                practitioners in the Netherlands.
+              </p>
+              <div className="hero-rule">
+                <strong>One company. One real production system.</strong>{" "}
+                Walked through end-to-end by the engineer who built it.
+              </div>
+              <div className="hero-actions">
+                <Link href="/event" className="btn btn-primary">
+                  See the event
+                </Link>
+                <Link href="/contact" className="btn btn-outline-light">
+                  Get involved
+                </Link>
+              </div>
+            </div>
+            <div className="hero-art">
+              <img
+                src="/images/whatbroke-home.jpeg"
+                alt="Practitioners connecting at a community gathering"
+                width="1536"
+                height="2048"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* WHY */}
+      {/* WHY — text left, designed navy panel right */}
       <section className="section section-white">
         <div className="container">
-          <div className="why-with-photo">
-            <div>
-              <p className="kicker">Why WhatBroke</p>
+          <div className="why-with-panel">
+            <div className="why-text">
+              <p className="kicker">
+                Why <span className="brand">WhatBroke</span>
+              </p>
               <h2 className="section-title">
                 The lessons that matter most rarely come from success.
               </h2>
@@ -53,10 +63,10 @@ export default function Home() {
                 </p>
                 <p>
                   Yet those stories are often missing from conference talks
-                  and technical blogs. WhatBroke exists to create a space
-                  where practitioners can openly share what happened, what
-                  they learned, and how they would approach the problem
-                  differently today.
+                  and technical blogs. <span className="brand">WhatBroke</span>{" "}
+                  exists to create a space where practitioners can openly
+                  share what happened, what they learned, and how they would
+                  approach the problem differently today.
                 </p>
                 <div className="why-callout">
                   <p>
@@ -66,12 +76,46 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="why-photo">
-              <img
-                src="/images/whatbroke-home.jpeg"
-                alt="WhatBroke community gathering"
-              />
-            </div>
+
+            <aside className="why-message">
+              <div className="why-message-rule" />
+              <p className="why-message-eyebrow">WhatBroke isn&apos;t about</p>
+              <p className="why-message-lead-white">what failed.</p>
+              <p className="why-message-connector">It&apos;s about</p>
+              <p className="why-message-lead-orange">what was learned.</p>
+
+              <div className="why-message-divider" />
+
+              <div className="why-message-list">
+                <div className="why-message-item">
+                  <span className="why-message-bullet" />
+                  <div>
+                    <p className="why-message-item-title">Real stories.</p>
+                    <p className="why-message-item-sub">
+                      From engineers who&apos;ve been there.
+                    </p>
+                  </div>
+                </div>
+                <div className="why-message-item">
+                  <span className="why-message-bullet" />
+                  <div>
+                    <p className="why-message-item-title">Real decisions.</p>
+                    <p className="why-message-item-sub">
+                      The trade-offs nobody writes about.
+                    </p>
+                  </div>
+                </div>
+                <div className="why-message-item">
+                  <span className="why-message-bullet" />
+                  <div>
+                    <p className="why-message-item-title">Real lessons.</p>
+                    <p className="why-message-item-sub">
+                      That you can take back to production.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
@@ -118,9 +162,10 @@ export default function Home() {
           <p className="kicker">Founding Session</p>
           <h2 className="section-title">Coming up.</h2>
           <p className="section-lead">
-            The first WhatBroke session looks at AI agents running in
-            production — how teams are handling identity, access, and security
-            boundaries for autonomous systems that take real actions.
+            The first <span className="brand">WhatBroke</span> session looks
+            at AI agents running in production — how teams are handling
+            identity, access, and security boundaries for autonomous systems
+            that take real actions.
           </p>
           <article className="event-teaser">
             <div>
@@ -163,7 +208,8 @@ export default function Home() {
               <span className="card-label">Host a Session</span>
               <h3>Open Your Doors</h3>
               <p>
-                Interested in hosting an upcoming WhatBroke meetup?
+                Interested in hosting an upcoming{" "}
+                <span className="brand">WhatBroke</span> meetup?
               </p>
               <Link
                 href="/contact?subject=host"
@@ -209,9 +255,10 @@ export default function Home() {
           <p className="kicker">Supported By</p>
           <h2 className="section-title">Community Partners</h2>
           <p className="section-lead">
-            WhatBroke is supported by organizations and community partners who
-            believe in practitioner-led learning, technical excellence, and
-            open knowledge sharing.
+            <span className="brand">WhatBroke</span> is supported by
+            organizations and community partners who believe in
+            practitioner-led learning, technical excellence, and open
+            knowledge sharing.
           </p>
           <div className="sponsors-row">
             <div className="sponsor-tile">NicheBytes</div>

@@ -13,7 +13,9 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="section section-light">
         <div className="container">
-          <p className="kicker">About WhatBroke</p>
+          <p className="kicker">
+            About <span className="brand">WhatBroke</span>
+          </p>
           <h1 className="hero-title">
             Production stories back at the center of technical communities.
           </h1>
@@ -25,9 +27,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-body prose-wide">
             <p>
-              WhatBroke was created to bring production stories back to the
-              center of technical communities. Too often, engineering events
-              focus on polished outcomes and ideal architectures.
+              <span className="brand">WhatBroke</span> was created to bring
+              production stories back to the center of technical communities.
+              Too often, engineering events focus on polished outcomes and
+              ideal architectures.
             </p>
             <p>
               But the most valuable lessons come from the challenges teams

@@ -1336,29 +1336,200 @@ section[id] { scroll-margin-top: 80px; }
   margin-bottom: 1.5rem;
 }
 
-/* Home page: Why section with photo on the right (2-col) */
-.why-with-photo {
-  display: grid;
-  grid-template-columns: 1.15fr 1fr;
-  gap: 3rem;
-  align-items: center;
+/* Brand mark — bold orange "WhatBroke" in body prose.
+   Skip in large titles, CTAs, hero h1, footer copyright. */
+.brand {
+  color: var(--orange);
+  font-weight: 700;
 }
-.why-photo {
-  border-radius: 4px;
+
+/* Why section: text left, designed navy panel right */
+.why-with-panel {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: stretch;
+  border-radius: 6px;
   overflow: hidden;
   border: 1px solid var(--border-light);
+  background: var(--white);
 }
-.why-photo img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  min-height: 320px;
+.why-text {
+  padding: 3rem 2.5rem;
+  background: var(--white);
+}
+
+.why-message {
+  background: var(--navy);
+  color: var(--white);
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+.why-message::before,
+.why-message::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.05);
+  pointer-events: none;
+}
+.why-message::before {
+  top: -40px; right: -40px;
+  width: 300px; height: 300px;
+  border-width: 60px;
+}
+.why-message::after {
+  bottom: -60px; left: -60px;
+  width: 260px; height: 260px;
+  border-width: 50px;
+}
+.why-message > * { position: relative; z-index: 1; }
+.why-message-rule {
+  width: 32px;
+  height: 2.5px;
+  background: var(--orange);
+  margin-bottom: 1.75rem;
+}
+.why-message-eyebrow {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin: 0 0 0.625rem;
+}
+.why-message-lead-white {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+.why-message-connector {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.4);
+  font-style: italic;
+  margin: 0.7rem 0 0;
+}
+.why-message-lead-orange {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--orange);
+  line-height: 1.2;
+  margin: 0.25rem 0 0;
+  letter-spacing: -0.01em;
+}
+.why-message-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.12);
+  margin: 1.75rem 0;
+}
+.why-message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.why-message-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.875rem;
+}
+.why-message-bullet {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+  position: relative;
+  top: -2px;
+}
+.why-message-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+  margin: 0;
+}
+.why-message-item-sub {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+  margin: 0.2rem 0 0;
+  line-height: 1.5;
 }
 
 @media (max-width: 920px) {
-  .why-with-photo { grid-template-columns: 1fr; gap: 2rem; }
-  .why-photo img  { min-height: 240px; }
+  .why-with-panel { grid-template-columns: 1fr; }
+  .why-text       { padding: 2.25rem 1.75rem; }
+  .why-message    { padding: 2.25rem 1.75rem; }
+}
+
+/* Contact aside: "What happens next" panel */
+.what-next {
+  background: var(--paper);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 2.5rem;
+}
+.what-next-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.what-next-eyebrow::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: var(--orange);
+}
+.what-next-eyebrow span {
+  font-size: 0.7rem;
+  color: var(--orange);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.what-next-steps { display: flex; flex-direction: column; }
+.what-next-step {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+.what-next-step:first-child { padding-top: 0; }
+.what-next-step:last-child  { padding-bottom: 0; }
+.what-next-step + .what-next-step {
+  border-top: 1px solid var(--border-light);
+}
+.what-next-num {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #d8d5cf;
+  line-height: 1;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+.what-next-num.is-active { color: var(--orange); }
+.what-next-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin: 0 0 0.15rem;
+  letter-spacing: -0.01em;
+}
+.what-next-sub {
+  font-size: 0.82rem;
+  color: var(--gray-600);
+  margin: 0;
+  line-height: 1.5;
+}
+@media (max-width: 540px) {
+  .what-next       { padding: 1.75rem; }
+  .what-next-num   { font-size: 2.1rem; }
+  .what-next-step  { gap: 1rem; }
 }
 
 /* Event box, light variant (sits on white background) */
