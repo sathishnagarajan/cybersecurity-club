@@ -104,10 +104,7 @@ export default function AboutPage() {
               <div className="founder-role">Advisor</div>
               <div className="founder-name">Sathish Nagarajan</div>
               <p className="founder-bio">
-                Multidisciplinary marketing leader and entrepreneur with 20+
-                years across SaaS, technology, film production, and creative
-                industries. Combines product strategy, GTM thinking, and
-                community-building experience. Founder of Pinrom.
+                Founder of Pinrom. 20+ years in SaaS and technology.
               </p>
               <div className="founder-links">
                 <a
