@@ -89,11 +89,11 @@ export default function ContactForm() {
     <div className="form-card">
       <form onSubmit={handleSubmit} noValidate>
         <div className="field">
-          <label htmlFor="name">Full name</label>
+          <label htmlFor="fullName">Full name</label>
           <input
             type="text"
-            id="name"
-            name="name"
+            id="fullName"
+            name="full_name"
             autoComplete="name"
             required
           />
@@ -121,10 +121,10 @@ export default function ContactForm() {
         </div>
 
         <div className="field">
-          <label htmlFor="subject">I&apos;m reaching out about</label>
+          <label htmlFor="enquiryType">I&apos;m reaching out about</label>
           <select
-            id="subject"
-            name="subject"
+            id="enquiryType"
+            name="enquiry_type"
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
@@ -142,6 +142,13 @@ export default function ContactForm() {
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" rows={5} required />
         </div>
+
+        {/* Sets the email subject Formspree uses when notifying the form owner */}
+        <input
+          type="hidden"
+          name="_subject"
+          value="New Contact Form Submission - WhatBroke.nl"
+        />
 
         <button
           type="submit"
