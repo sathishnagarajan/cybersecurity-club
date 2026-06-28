@@ -25,11 +25,13 @@ export default function CodeOfConductPage() {
           <article className="legal-prose">
             <h2>The quick version</h2>
             <p>
-              <BrandMark /> is dedicated to providing a harassment-free
-              community experience for everyone — regardless of gender, gender
-              identity and expression, age, sexual orientation, disability,
-              physical appearance, body size, race, ethnicity, religion (or
-              lack thereof), or technology choices.
+              <BrandMark /> is a curated practitioner community for senior
+              engineers and security engineers. We&apos;re dedicated to
+              providing a harassment-free experience for every participant —
+              regardless of gender, gender identity and expression, age,
+              sexual orientation, disability, physical appearance, body size,
+              race, ethnicity, religion (or lack thereof), or technology
+              choices.
             </p>
             <p>
               We do not tolerate harassment of community participants in any
