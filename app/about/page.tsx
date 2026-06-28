@@ -62,12 +62,18 @@ export default function AboutPage() {
               <div className="founder-role">Founder / Chief Convenor</div>
               <div className="founder-name">Saritha Jain</div>
               <p className="founder-bio">
-                Founder of NicheBytes — a niche technical talent partner
+                Started <BrandMark /> to bring honest production stories back
+                to the security and infrastructure community — the incidents,
+                trade-offs, and lessons that shape the systems engineering
+                teams actually run.
+              </p>
+              <p className="founder-bio">
+                Founder of NicheBytes, a niche technical talent partner
                 specialising in Cloud, DevOps, and Cybersecurity across
                 European SaaS and scale-ups. 12+ years embedded with
                 engineering teams at Zoho, Worldline, and PowerToFly,
-                partnering with managers on hiring and building practitioner
-                networks across the EU/UK technology ecosystem.
+                building practitioner networks across the EU/UK technology
+                ecosystem.
               </p>
               <div className="founder-links">
                 <a
