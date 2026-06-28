@@ -1610,7 +1610,11 @@ section[id] { scroll-margin-top: 80px; }
   overflow: hidden;
   align-items: stretch;
 }
-.founder-row.is-compact { grid-template-columns: 220px 1fr; }
+/* Advisors variant: single column, photo above bio, card constrained. */
+.founder-row.is-compact {
+  grid-template-columns: 1fr;
+  max-width: 360px;
+}
 
 .founder-row-photo {
   background: var(--paper);
@@ -1624,7 +1628,7 @@ section[id] { scroll-margin-top: 80px; }
   object-position: center top;
   min-height: 360px;
 }
-.founder-row.is-compact .founder-row-photo img { min-height: 260px; }
+.founder-row.is-compact .founder-row-photo img { min-height: 280px; }
 
 .founder-row-info {
   padding: 2.25rem 2.5rem;
@@ -1632,17 +1636,15 @@ section[id] { scroll-margin-top: 80px; }
   flex-direction: column;
   justify-content: center;
 }
-.founder-row.is-compact .founder-row-info { padding: 1.75rem 2rem; }
+.founder-row.is-compact .founder-row-info { padding: 1.5rem 1.75rem 1.75rem; }
 /* Bio in row layout reads as flowing prose, not centered card text */
 .founder-row .founder-bio { text-align: left; }
 
 @media (max-width: 720px) {
-  .founder-row,
-  .founder-row.is-compact { grid-template-columns: 1fr; }
+  .founder-row { grid-template-columns: 1fr; }
   .founder-row-photo img { min-height: 280px; }
-  .founder-row.is-compact .founder-row-photo img { min-height: 220px; }
-  .founder-row-info,
-  .founder-row.is-compact .founder-row-info { padding: 1.75rem 1.5rem; }
+  .founder-row.is-compact { max-width: none; }
+  .founder-row-info { padding: 1.75rem 1.5rem; }
 }
 
 /* Footer logo image needs a slightly different aspect (4.3:1) */
