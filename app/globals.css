@@ -267,7 +267,7 @@ textarea:focus-visible, summary:focus-visible {
 .hero { padding-block: 7rem 6rem; }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.35fr 1fr;
+  grid-template-columns: 1.55fr 1fr;
   gap: 4rem;
   align-items: center;
 }
