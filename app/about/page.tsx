@@ -97,11 +97,11 @@ export default function AboutPage() {
             <div className="founder-row-photo">
               <img
                 src="/images/sathish-nagarajan.png"
-                alt="Sathish Nagarajan — Lead Volunteer / Advisor at WhatBroke"
+                alt="Sathish Nagarajan — Advisor at WhatBroke"
               />
             </div>
             <div className="founder-row-info">
-              <div className="founder-role">Lead Volunteer / Advisor</div>
+              <div className="founder-role">Advisor</div>
               <div className="founder-name">Sathish Nagarajan</div>
               <p className="founder-bio">
                 Multidisciplinary marketing leader and entrepreneur with 20+
