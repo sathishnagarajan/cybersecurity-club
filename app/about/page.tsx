@@ -55,11 +55,11 @@ export default function AboutPage() {
             <div className="founder-row-photo">
               <img
                 src="/images/saritha-jain-profile.png"
-                alt="Saritha Jain — Chief Convenor of WhatBroke"
+                alt="Saritha Jain — Founder / Chief Convenor of WhatBroke"
               />
             </div>
             <div className="founder-row-info">
-              <div className="founder-role">Chief Convenor</div>
+              <div className="founder-role">Founder / Chief Convenor</div>
               <div className="founder-name">Saritha Jain</div>
               <p className="founder-bio">
                 Founder of NicheBytes — a niche technical talent partner
