@@ -28,10 +28,9 @@ export default function AboutPage() {
         <div className="container">
           <div className="about-body prose-wide">
             <p>
-              <BrandMark /> was created to bring
-              production stories back to the center of technical communities.
-              Too often, engineering events focus on polished outcomes and
-              ideal architectures.
+              <BrandMark /> was created to bring production stories back to
+              the center of technical communities. Too often, engineering
+              events focus on polished outcomes and ideal architectures.
             </p>
             <p>
               But the most valuable lessons come from the challenges teams
@@ -47,73 +46,74 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* PEOPLE */}
+      {/* FOUNDER */}
       <section className="section section-light">
         <div className="container">
-          <p className="kicker">People</p>
+          <p className="kicker">Founder</p>
           <h2 className="section-title">Built by practitioners.</h2>
-          <div className="people-grid">
-            <div className="founder-card">
-              <div className="founder-photo">
-                <img
-                  src="/images/saritha-jain-profile.png"
-                  alt="Saritha Jain — Founder of WhatBroke"
-                />
-              </div>
-              <div className="founder-info">
-                <div className="founder-role">Chief Convenor</div>
-                <div className="founder-name">Saritha Jain</div>
-                <p className="founder-bio">
-                  Founder of NicheBytes — a niche technical talent partner
-                  specialising in Cloud, DevOps, and Cybersecurity across
-                  European SaaS and scale-ups. 12+ years embedded with
-                  engineering teams at Zoho, Worldline, and PowerToFly,
-                  partnering with managers on hiring and building practitioner
-                  networks across the EU/UK technology ecosystem.
-                </p>
-                <div className="founder-links">
-                  <a
-                    href="https://www.linkedin.com/in/sarithajain/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn →
-                  </a>
-                </div>
+          <article className="founder-row">
+            <div className="founder-row-photo">
+              <img
+                src="/images/saritha-jain-profile.png"
+                alt="Saritha Jain — Chief Convenor of WhatBroke"
+              />
+            </div>
+            <div className="founder-row-info">
+              <div className="founder-role">Chief Convenor</div>
+              <div className="founder-name">Saritha Jain</div>
+              <p className="founder-bio">
+                Founder of NicheBytes — a niche technical talent partner
+                specialising in Cloud, DevOps, and Cybersecurity across
+                European SaaS and scale-ups. 12+ years embedded with
+                engineering teams at Zoho, Worldline, and PowerToFly,
+                partnering with managers on hiring and building practitioner
+                networks across the EU/UK technology ecosystem.
+              </p>
+              <div className="founder-links">
+                <a
+                  href="https://www.linkedin.com/in/sarithajain/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn →
+                </a>
               </div>
             </div>
+          </article>
+        </div>
+      </section>
 
-            <div className="founder-card">
-              <div className="founder-photo">
-                <img
-                  src="/images/sathish-nagarajan.png"
-                  alt="Sathish Nagarajan — Community Strategist / Advisor at WhatBroke"
-                />
-              </div>
-              <div className="founder-info">
-                <div className="founder-role">
-                  Community Strategist / Advisor
-                </div>
-                <div className="founder-name">Sathish Nagarajan</div>
-                <p className="founder-bio">
-                  Multidisciplinary marketing leader and entrepreneur with
-                  20+ years across SaaS, technology, film production, and
-                  creative industries. Combines product strategy, GTM
-                  thinking, and community-building experience. Founder of
-                  Pinrom.
-                </p>
-                <div className="founder-links">
-                  <a
-                    href="https://linkedin.com/in/sathishnagarajan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    LinkedIn →
-                  </a>
-                </div>
+      {/* ADVISORS */}
+      <section className="section section-white">
+        <div className="container">
+          <p className="kicker">Advisors</p>
+          <article className="founder-row is-compact">
+            <div className="founder-row-photo">
+              <img
+                src="/images/sathish-nagarajan.png"
+                alt="Sathish Nagarajan — Lead Volunteer / Advisor at WhatBroke"
+              />
+            </div>
+            <div className="founder-row-info">
+              <div className="founder-role">Lead Volunteer / Advisor</div>
+              <div className="founder-name">Sathish Nagarajan</div>
+              <p className="founder-bio">
+                Multidisciplinary marketing leader and entrepreneur with 20+
+                years across SaaS, technology, film production, and creative
+                industries. Combines product strategy, GTM thinking, and
+                community-building experience. Founder of Pinrom.
+              </p>
+              <div className="founder-links">
+                <a
+                  href="https://linkedin.com/in/sathishnagarajan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn →
+                </a>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 

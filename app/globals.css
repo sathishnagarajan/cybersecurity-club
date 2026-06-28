@@ -1582,13 +1582,65 @@ section[id] { scroll-margin-top: 80px; }
 }
 .prose-wide p { font-size: 1.05rem; line-height: 1.8; }
 
-/* About page: 2-col people grid (Saritha + Sathish) */
+/* About page: 2-col people grid (Saritha + Sathish) — legacy, kept
+   for back-compat with any stale references. Newer About uses
+   .founder-row below. */
 .people-grid {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   max-width: 820px;
+}
+
+/* About page: horizontal founder/advisor row.
+   Photo (left) + role/name/bio/links (right). The .is-compact
+   variant shrinks the photo track for the Advisors section so
+   advisors read as supporting rather than co-equal to the founder. */
+.founder-row {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 0;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  overflow: hidden;
+  align-items: stretch;
+}
+.founder-row.is-compact { grid-template-columns: 220px 1fr; }
+
+.founder-row-photo {
+  background: var(--paper);
+  overflow: hidden;
+}
+.founder-row-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center top;
+  min-height: 360px;
+}
+.founder-row.is-compact .founder-row-photo img { min-height: 260px; }
+
+.founder-row-info {
+  padding: 2.25rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.founder-row.is-compact .founder-row-info { padding: 1.75rem 2rem; }
+/* Bio in row layout reads as flowing prose, not centered card text */
+.founder-row .founder-bio { text-align: left; }
+
+@media (max-width: 720px) {
+  .founder-row,
+  .founder-row.is-compact { grid-template-columns: 1fr; }
+  .founder-row-photo img { min-height: 280px; }
+  .founder-row.is-compact .founder-row-photo img { min-height: 220px; }
+  .founder-row-info,
+  .founder-row.is-compact .founder-row-info { padding: 1.75rem 1.5rem; }
 }
 
 /* Footer logo image needs a slightly different aspect (4.3:1) */
