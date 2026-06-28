@@ -1160,16 +1160,25 @@ textarea:focus-visible, summary:focus-visible {
 }
 .cc-customize:hover { color: var(--text-dark); }
 
-/* Footer cookie-preferences link styled like the other footer links */
+/* Cookie-preferences footer button — must match .footer-col a exactly.
+   `font: inherit` was pulling 16px from <body>; <a> rule sets 0.875rem,
+   <button> didn't get it because the selector is `a`. */
 .footer-link-button {
+  display: block;
   background: none;
   border: 0;
-  padding: 0;
+  padding-block: 0.3rem;
+  padding-inline: 0;
   cursor: pointer;
-  font: inherit;
-  color: inherit;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: inherit;
+  line-height: inherit;
+  color: var(--gray-400);
   text-align: left;
+  transition: color 0.2s;
 }
+.footer-link-button:hover { color: var(--white); }
 
 @media (max-width: 540px) {
   .cc-banner    { padding: 0.6rem; }
