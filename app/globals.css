@@ -984,6 +984,52 @@ textarea:focus-visible, summary:focus-visible {
 }
 
 /* =========================================================
+   Legal pages (Privacy Policy / Code of Conduct)
+   ========================================================= */
+
+.legal-prose {
+  max-width: 760px;
+  color: var(--text-mid);
+}
+.legal-prose h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.015em;
+}
+.legal-prose h2:first-child { margin-top: 0; }
+.legal-prose h2[id] { scroll-margin-top: 88px; }
+.legal-prose p { margin-bottom: 1.1rem; line-height: 1.75; }
+.legal-prose ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.legal-prose li {
+  margin-bottom: 0.6rem;
+  line-height: 1.7;
+}
+.legal-prose a {
+  color: var(--orange);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-prose a:hover { color: var(--orange-dk); }
+.legal-prose strong { color: var(--text-dark); font-weight: 700; }
+.legal-fineprint {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+
+.legal-meta {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  letter-spacing: 0.02em;
+}
+
+/* =========================================================
    Cookie consent banner
    ========================================================= */
 

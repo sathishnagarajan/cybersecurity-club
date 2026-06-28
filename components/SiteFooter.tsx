@@ -31,14 +31,8 @@ export default function SiteFooter() {
 
         <div className="footer-col">
           <h4>Resources</h4>
-          {/* Placeholder — Code of Conduct URL to be added. */}
-          <a href="#" aria-label="Code of Conduct (to be added)">
-            Code of Conduct
-          </a>
-          {/* Placeholder — Privacy Policy URL to be added. */}
-          <a href="#" aria-label="Privacy Policy (to be added)">
-            Privacy Policy
-          </a>
+          <Link href="/code-of-conduct">Code of Conduct</Link>
+          <Link href="/privacy-policy">Privacy Policy</Link>
           <CookiePreferencesLink className="footer-link-button" />
           <Link href="/contact">Contact</Link>
         </div>

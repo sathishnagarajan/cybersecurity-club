@@ -92,11 +92,7 @@ export default function CookieConsentBanner() {
           <p className="cc-lead">
             We use cookies to run the site, understand usage, and improve your
             experience. You choose what to allow. See our{" "}
-            {/* Placeholder — Privacy Policy URL to be added. */}
-            <a href="#" aria-label="Privacy Policy (to be added)">
-              Privacy Policy
-            </a>
-            .
+            <a href="/privacy-policy">Privacy Policy</a>.
           </p>
         </div>
 
