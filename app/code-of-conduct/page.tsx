@@ -25,8 +25,9 @@ export default function CodeOfConductPage() {
           <article className="legal-prose">
             <h2>The quick version</h2>
             <p>
-              <BrandMark /> is a curated practitioner community for senior
-              engineers and security engineers. We&apos;re dedicated to
+              <BrandMark /> is a curated practitioner community for engineers
+              with operational responsibility for production systems —
+              security, cloud, and infrastructure. We&apos;re dedicated to
               providing a harassment-free experience for every participant —
               regardless of gender, gender identity and expression, age,
               sexual orientation, disability, physical appearance, body size,
