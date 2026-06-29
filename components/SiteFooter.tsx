@@ -39,8 +39,11 @@ export default function SiteFooter() {
 
         <div className="footer-col">
           <h4>Follow</h4>
-          {/* Placeholder — LinkedIn URL to be added. */}
-          <a href="#" aria-label="LinkedIn (to be added)">
+          <a
+            href="https://www.linkedin.com/company/whatbroke/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             LinkedIn
           </a>
         </div>
